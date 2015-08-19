@@ -1,6 +1,6 @@
 //
 //  UIScrollView+YPExtension.m
-//  0818-新闻头条
+//  YPExtension
 //
 //  Created by 胡云鹏 on 15/8/18.
 //  Copyright (c) 2015年 MichaelPPP. All rights reserved.

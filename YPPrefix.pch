@@ -1,6 +1,6 @@
 //
 //  pchFile.pch
-//  Sina
+//  YPExtension
 //
 //  Created by 胡云鹏 on 15/8/7.
 //  Copyright (c) 2015年 MichaelPPP. All rights reserved.
@@ -14,6 +14,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+
 #import "UIView+YPExtension.h"
 #import "UIScrollView+YPExtension.h"
 
@@ -29,11 +31,22 @@
  *  RGB颜色
  */
 #define YPColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-
 /**
  *  随机色
  */
 #define YPRandomColor YPColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
 
+/**
+ *  屏幕宽度
+ */
+#define YPScreenW [UIScreen mainScreen].bounds.size.width
+/**
+ *  屏幕高度
+ */
+#define YPScreenH [UIScreen mainScreen].bounds.size.height
+/**
+ *  屏幕Frame
+ */
+#define YPScreenBounds [UIScreen mainScreen].bounds
 
 #endif
