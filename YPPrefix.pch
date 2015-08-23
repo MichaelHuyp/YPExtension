@@ -15,9 +15,18 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
+//#import "AFNetworking.h"
+//#import "MBProgressHUD+MJ.h"
+#import "MJExtension.h"
+//#import "UIImageView+WebCache.h"
+//#import "SDWebImageManager.h"
+#import "MJRefresh.h"
 
 #import "UIView+YPExtension.h"
 #import "UIScrollView+YPExtension.h"
+#import "UIViewController+YPInit.h"
+//#import "UIBarButtonItem+Extension.h"
+//#import "UIWindow+YPExtension.h"
 
 
 #ifdef DEBUG // 处于开发阶段
@@ -25,6 +34,57 @@
 #else // 处于发布阶段
 #define YPLog(...)
 #endif
+
+/**
+ *  系统导航栏高度
+ */
+#define YPNavigationBarH 44
+/**
+ *  系统状态栏高度
+ */
+#define YPStatusBar 20
+/**
+ *  系统导航栏+状态栏高度
+ */
+#define YPStatusBarAndNavBar 64
+/**
+ *  间距
+ */
+#define YPPadding 8
+#define YPPadding_2 16
+
+/**
+ *  颜色
+ */
+#define YPBlackColor [UIColor blackColor]
+#define YPBlueColor [UIColor blueColor]
+#define YPRedColor [UIColor redColor]
+#define YPWhiteColor [UIColor whiteColor]
+#define YPGrayColor [UIColor grayColor]
+#define YPDarkGrayColor [UIColor darkGrayColor]
+#define YPLightGrayColor [UIColor lightGrayColor]
+#define YPGreenColor [UIColor greenColor]
+#define YPCyanColor [UIColor cyanColor]
+#define YPYellowColor [UIColor yellowColor]
+#define YPMagentaColor [UIColor magentaColor]
+#define YPOrangeColor [UIColor orangeColor]
+#define YPPurpleColor [UIColor purpleColor]
+#define YPBrownColor [UIColor brownColor]
+#define YPClearColor [UIColor clearColor]
+/**
+ *  字体大小
+ */
+#define YPFont_10 [UIFont boldSystemFontOfSize:10]
+#define YPFont_11 [UIFont boldSystemFontOfSize:11]
+#define YPFont_12 [UIFont boldSystemFontOfSize:12]
+#define YPFont_13 [UIFont boldSystemFontOfSize:13]
+#define YPFont_14 [UIFont boldSystemFontOfSize:14]
+#define YPFont_15 [UIFont boldSystemFontOfSize:15]
+#define YPFont_16 [UIFont boldSystemFontOfSize:16]
+#define YPFont_17 [UIFont boldSystemFontOfSize:17]
+#define YPFont_18 [UIFont boldSystemFontOfSize:18]
+#define YPFont_19 [UIFont boldSystemFontOfSize:19]
+#define YPFont_20 [UIFont boldSystemFontOfSize:20]
 
 
 /**
