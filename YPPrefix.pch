@@ -90,11 +90,13 @@
 /**
  *  RGB颜色
  */
-#define YPColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define YPColor_RGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define YPColor_RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 /**
  *  随机色
  */
-#define YPRandomColor YPColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+#define YPRandomColor_RGB YPColor_RGB(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+#define YPRandomColor_RGBA YPColor_RGBA(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
 
 /**
  *  屏幕
@@ -117,4 +119,23 @@
  */
 #define YPScreenScale [UIScreen mainScreen].scale
 
+/**
+ *  微博特有宏
+ */
+// cell的边框宽度
+#define YPStatusCellBorderW 10
+// cell之间的间距
+#define YPStatusCellMargin 15
+// 昵称字体
+#define YPStatusCellNameFont [UIFont systemFontOfSize:15]
+// 时间字体
+#define YPStatusCellTimeFont [UIFont systemFontOfSize:12]
+// 来源字体
+#define YPStatusCellSourceFont [UIFont systemFontOfSize:12]
+// 正文字体
+#define YPStatusCellContentFont [UIFont systemFontOfSize:14]
+// 转发微博正文字体
+#define YPStatusCellRetweetContentFont [UIFont systemFontOfSize:13]
+// 转发微博背景颜色
+#define YPRetweetBgColor [UIColor colorWithRed:0.95f green:0.95f blue:0.96f alpha:1.00f]
 #endif
