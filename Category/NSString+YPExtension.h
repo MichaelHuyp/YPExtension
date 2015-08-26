@@ -23,4 +23,7 @@
  */
 + (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxW:(CGFloat)maxW;
 
+- (CGSize)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW;
+- (CGSize)sizeWithFont:(UIFont *)font;
+
 @end

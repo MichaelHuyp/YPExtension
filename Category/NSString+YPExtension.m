@@ -25,4 +25,19 @@
     return [self sizeWithText:text font:font maxW:MAXFLOAT];
 }
 
+- (CGSize)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW
+{
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    attributes[NSFontAttributeName] = font;
+    
+    CGSize maxSize = CGSizeMake(maxW, MAXFLOAT);
+    
+    return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+}
+
+- (CGSize)sizeWithFont:(UIFont *)font
+{
+    return [self sizeWithFont:font maxW:MAXFLOAT];
+}
+
 @end
