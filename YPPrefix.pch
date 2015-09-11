@@ -36,6 +36,16 @@
 #endif
 
 /**
+ *  定位行的打印
+ */
+#define YPDEBUGLOG(fmt, ...) YPLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+/**
+ *  通知中心
+ */
+#define YPNotificationCenter [NSNotificationCenter defaultCenter]
+
+/**
  *  系统导航栏高度
  */
 #define YPNavigationBarH 44
@@ -97,6 +107,11 @@
  */
 #define YPRandomColor_RGB YPColor_RGB(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
 #define YPRandomColor_RGBA YPColor_RGBA(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+
+/**
+ *  弧度制转为角度制
+ */
+#define YPAngle2Radian(angle) ((angle) / 180.0 * M_PI)
 
 /**
  *  屏幕
